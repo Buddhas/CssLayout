@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>未知宽高元素水平垂直居中</title>
+</head>
+<style>
+    .wrap {
+        position: absolute;
+        width: 50%;
+        height: 500px;
+        text-align: center;
+        background: #92b922;
+    }
+    .test {
+        background: #de3168;
+        display: inline-block;
+        color: #fff;
+        padding: 20px;
+        
+    }
+    .wrap:after {
+        display: inline-block;
+        content: '';
+        width: 0px;
+        height: 100%;
+        background: #533c12;
+        vertical-align: middle;
+    }
+    /* .vamb{
+        display: inline-block;
+        width: 0px;
+        height: 100%;
+        vertical-align: middle;
+    } */
+    </style>
+    <div class="wrap">
+            <!-- <b class="vamb"></b> -->
+        <div class="test">
+            水平垂直居中了吧<br>
+            两行文字哦
+        </div>
+    </div>
+</html>
+
