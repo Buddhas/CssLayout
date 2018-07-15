@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+            通过设置子元素display: inline-block;，父元素： text-align: center;实现
+        */
+       /* .out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            text-align: center;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            display: inline-block;
+        }*/
+
+          /*
+            通过设置子元素 margin:0 auto实现
+        */
+       /*.out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin:0 auto
+        }*/
+
+        /*通过绝对定位实现*/
+        /*.out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin:0 auto;
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+        }*/
+
+        /*
+            flex布局实现
+        */
+        .out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            display: flex;
+            justify-content:center
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+</html>
