@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /**通过设置父元素display: table-cell;
+            vertical-align: middle;*/
+        /* .out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .inner{
+            
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            
+        } */
+
+
+        /*通过绝对定位实现*/
+        /* .out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+        }
+        .inner{
+            
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left:-50px;
+            margin-top: -50px;
+        } */
+
+        /*通过css3的transform：translate实现*/
+        /* .out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+        }
+        .inner{
+            
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translateX(-50%) translateY(-50%)
+        } */
+
+        /*通过flex布局实现*/
+        .out{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner{
+            
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="inner">
+            123
+        </div>
+    </div>
+</body>
+</html>
